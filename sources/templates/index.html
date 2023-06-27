@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Webpage</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <script src="/static/script.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+<div class="background-overlay">
+    <div class="container">
+        <div class="card">
+            <h1>Healthcare</h1>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" name="image" id="image-input" required>
+                <p>Choose an option:</p>
+                <label for="option1">Pneumonia Detection</label>
+                <input type="radio" name="option" id="option1" value="pneumonia" checked required>
+                <label for="option2">Cateract Detection</label>
+                <input type="radio" name="option" id="option2" value="cateract" required></br>
+                <button type="submit" class="upload-btn">Detect</button>
+                <div class="loading-ring"></div>
+            </form>
+            <div id="result-container"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
